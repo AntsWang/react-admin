@@ -10,6 +10,7 @@
     flex-direction: row;  
 }
 .right{
+    position: relative;
     flex:1;
     background-color: bisque;
 }

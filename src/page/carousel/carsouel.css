@@ -9,3 +9,7 @@
   .ant-carousel .slick-slide h3 {
     color: #fff;
   }
+  .carouselContainer{
+    width:100%;
+    height:100%;
+  }

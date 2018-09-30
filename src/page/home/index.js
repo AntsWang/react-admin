@@ -6,6 +6,8 @@ import './home.css';
 
 import { Avatar } from 'antd';
 
+import MainContent from '../mainContent/mainContent'
+
 
 const SubMenu = Menu.SubMenu;
 
@@ -63,7 +65,7 @@ class Home extends React.Component {
                     </div>
 
                     <div class="right">
-                        {this.state.SelectedKeys&&this.state.SelectedKeys.key}
+                        <MainContent/>
                     </div>
                 </div>
             </div>
