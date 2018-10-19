@@ -8,6 +8,8 @@ import { Avatar } from 'antd';
 
 import MainContent from '../mainContent/mainContent'
 
+import Rate from '../../component/pingfen'
+
 
 const SubMenu = Menu.SubMenu;
 
@@ -31,7 +33,7 @@ class Home extends React.Component {
                         <Icon type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'} />
                     </Button>
                     <Menu
-                    onClick = {(key)=>{console.log(key);this.setState({SelectedKeys:key.key})}}
+                        onClick={(key) => { console.log(key); this.setState({ SelectedKeys: key.key }) }}
                         defaultSelectedKeys={['1']}
                         defaultOpenKeys={['sub1']}
                         mode="inline"
@@ -67,7 +69,10 @@ class Home extends React.Component {
                     </Menu>
                 </div>
 
-                <div>{this.state.SelectedKeys}</div>
+                <div>
+                    {this.state.SelectedKeys == 2 ? <Rate /> : this.state.SelectedKeys==1?<img src="../../images/1.jpg"/>:this.state.SelectedKeys}
+
+                </div>
             </div>
         );
     }
