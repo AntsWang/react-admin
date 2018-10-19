@@ -1,24 +1,8 @@
-.container{
-    height:60px;
-    background-color: #1890ff;
+.home{
+    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: row
 }
-.content{
-    display: flex;
-    flex-direction: row;  
-}
-.right{
-    position: relative;
-    flex:1;
-    background-color: bisque;
-}
-.header-right{
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-}
-.header-right .user{
-    margin-left: 10px;
+.home div:first-child{
+background: #000
 }

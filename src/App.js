@@ -5,12 +5,12 @@ import Login from './page/login/login';
 
 import {BrowserRouter as Router,Route,Link} from "react-router-dom";
 
-import Home from "./page/home/index"
+import Home from "./page/home/index.jsx"
 
 const RootRouter = ()=>{
   return(
     <Router>
-      <div>
+      <div style={{height:"100%"}}>
        <Route path="/" exact component={Login}/>
        <Route path="/home" component={Home}/>
       </div>
